@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<title>Adding Tables</title>
+	
+		<style>
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Merges double lines into a single clean border */
+  }
+  th, td {
+    border: 1px solid black; /* Sets a 1-pixel solid black line */
+    padding: 8px;
+  }
+</style>
+
+
+
+</head>
+
+<body>
+<!-- Table to display the lineup for the 4 areas in county fair-->
+<h1>Adding Tables</h1>
+
+<table>
+	<caption>Event Schedule</caption>
+	<thead>
+		<tr>
+			<th></th>
+			<th scope="col" >Main Stage</th>
+			<th scope="col" >Food Tent</th>
+			<th scope="col" >Activity Area</th>
+			<th scope="col" >Beer Garden</th>
+			<!-- Passcode to beer tent is 123098 -->
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row" >10:00 AM</th>
+			<td> Opening Ceremony</td>
+			<td>Breakfast</td>
+			<td>Kids Games</td>
+			<td>Closed</td>
+		</tr>
+		<tr>
+			<th scope="row" >11:00 AM</th>
+			<td>Live Music</td>
+			<td>BBQ Lunch</td>
+			<td>Cornhole</td>
+			<td>Opens</td>
+		</tr>
+		
+		<tr>
+			<th scope="row" >12:00 PM</th>
+			<td colspan="4">Festival Lunch & Entertainment</td>
+
+		</tr>
+		
+		<tr>
+			<th scope="row" >1:00 PM</th>
+			<td>Local Band</td>
+			<td>Food Vendors</td>
+			<td rowspan="3">Softball Tournament</td>
+			<td>Happy Hour</td>
+		</tr>
+		
+		<tr>
+			<th scope="row" >2:00 PM</th>
+			<td>Dance Performances</td>
+			<td>Food Vendors</td>
+			
+			<td>Happy Hour</td>
+		</tr>
+		
+		<tr>
+			<th scope="row" >3:00 PM</th>
+			<td>Live Music</td>
+			<td>Dessert Contest</td>
+			
+			<td>Live Music</td>
+		</tr>
+		
+		<tr>
+			<th scope="row" >4:00 PM</th>
+			<td colspan="4">Closing Celebration</td>
+		</tr>
+		
+
+	</tbody>
+</table>
+
+
+</body>
+</html>
