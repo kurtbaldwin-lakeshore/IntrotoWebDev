@@ -38,11 +38,11 @@
     </section>
 
     <section id="halloween">
-      <p>Halloween Candy</p>
+      <h2>Halloween Candy</h2>
       <p>Halloween candy is built for volume — fun-size bars, individually wrapped pieces, and anything that survives a
         pillowcase full of trick-or-treating.</p>
       <!-- ERROR 1: Missing alt attribute -->
-      <img src="candy-corn.jpg" width="200">
+      <img src="candy-corn.jpg" alt="descriptive text of the image" width="200">
       <ul>
         <li>Fun-size chocolate bars</li>
         <li>Candy corn</li>
@@ -50,7 +50,7 @@
         <li>Gummy worms and spiders</li>
       </ul>
       <!-- ERROR 5: Bad attribute value - width must be a plain number, no "px" -->
-      <img src="fun-size-bars.jpg" alt="An assortment of fun-size chocolate bars" width="200px">
+      <img src="fun-size-bars.jpg" alt="An assortment of fun-size chocolate bars" width="200">
     </section>
 
     <section id="verdict">
@@ -91,7 +91,7 @@
   </main>
 
   <!-- ERROR 4: Duplicate id - "verdict" is already used on the section above -->
-  <footer id="verdict">
+  <footer>
     <p>&copy; 2026 Candy Showdown. For classroom demonstration use only.</p>
   </footer>
 
