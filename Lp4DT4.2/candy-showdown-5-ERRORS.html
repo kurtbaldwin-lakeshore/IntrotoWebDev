@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candy Showdown: Valentine's Day vs. Halloween</title>
+</head>
+<body>
+
+  <a href="#main">Skip to main content</a>
+
+  <header>
+    <h1>Candy Showdown: Valentine's Day vs. Halloween</h1>
+    <nav>
+      <ul>
+        <li><a href="#valentines">Valentine's Day</a></li>
+        <li><a href="#halloween">Halloween</a></li>
+        <li><a href="#verdict">The Verdict</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section id="valentines">
+      <h2>Valentine's Day Candy</h2>
+      <!-- ERROR 2: Unclosed element - this paragraph is missing its closing </p> -->
+      <p>Valentine's Day candy leans romantic and a little fancy — boxed chocolates, heart shapes, and candy meant to be given as a gift rather than grabbed by the handful.
+      <ul>
+        <li>Heart-shaped boxes of assorted chocolates</li>
+        <li>Conversation hearts with printed messages</li>
+        <li>Chocolate-covered strawberries</li>
+        <li>Cinnamon hearts</li>
+      </ul>
+    </section>
+
+    <section id="halloween">
+      <h2>Halloween Candy</h2>
+      <p>Halloween candy is built for volume — fun-size bars, individually wrapped pieces, and anything that survives a pillowcase full of trick-or-treating.</p>
+      <!-- ERROR 1: Missing alt attribute -->
+      <img src="candy-corn.jpg">
+      <ul>
+        <li>Fun-size chocolate bars</li>
+        <li>Candy corn</li>
+        <li>Lollipops</li>
+        <li>Gummy worms and spiders</li>
+      </ul>
+      <!-- ERROR 5: Bad attribute value - width must be a plain number, no "px" -->
+      <img src="fun-size-bars.jpg" alt="An assortment of fun-size chocolate bars" width="200px">
+    </section>
+
+    <section id="verdict">
+      <h2>The Verdict</h2>
+      <!-- ERROR 3: Element not allowed here - a div cannot go inside a p -->
+      <p>Both holidays have a clear candy identity.<div>Here's how they compare side by side.</div></p>
+      <table>
+        <caption>Valentine's Day Candy vs. Halloween Candy</caption>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Valentine's Day</th>
+            <th>Halloween</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Packaging style</td>
+            <td>Boxed, gift-wrapped</td>
+            <td>Individually wrapped, bulk</td>
+          </tr>
+          <tr>
+            <td>Typical quantity</td>
+            <td>One box, shared</td>
+            <td>A full pillowcase</td>
+          </tr>
+          <tr>
+            <td>Signature item</td>
+            <td>Conversation hearts</td>
+            <td>Candy corn</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- ERROR 4: Duplicate id - "verdict" is already used on the section above -->
+  <footer id="verdict">
+    <p>&copy; 2026 Candy Showdown. For classroom demonstration use only.</p>
+  </footer>
+
+</body>
+</html>
