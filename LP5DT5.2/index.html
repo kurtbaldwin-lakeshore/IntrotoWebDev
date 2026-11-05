@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <main id="main">
+
+        <fieldset>
+            <legend>County of Residence</legend>
+            <input type="radio" id="Manitowoc" name="county" value="Manit">
+            <label for="Manitowoc">Manitowoc</label>
+            <input type="radio" id="Sheboygan" name="county" value="Sheb">
+            <label for="Sheboygan">Sheboygan</label>
+            <input type="radio" id="Other" name="county" value="Other">
+            <label for="Other">Other Guests</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Favorite Season</legend>
+            <input type="checkbox" id="winter" name="winter" value="winter">
+            <label for="winter">Let it Snow!</label>
+
+            <input type="checkbox" id="spring" name="spring" value="spring">
+            <label for="spring">Flowers are blooming</label>
+
+            <input type="checkbox" id="fall" name="fall" value="fall">
+            <label for="fall">I can't get up.</label>
+
+        </fieldset>
+
+        <p></p>
+        <label for="statelist">State List:</label>
+        <select id="statelist" name="state">
+            <option value="">--- Select One ---</option>
+            <optgroup label="Midwest">
+                <option value="wi">Wisconsin</option>
+                <option value="il">Illinois</option>
+                <option value="mn">Minnesota</option>
+            </optgroup>
+            <optgroup label="South East">
+                <option value="fl">Floria</option>
+                <option value="ga">Georgia</option>
+                <option value="al">Alabama</option>
+            </optgroup>
+
+
+        </select>
+
+    </main>
+</body>
+
+</html>

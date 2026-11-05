@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <main id="main">
+        <h1>Forms Demo - Part 5.1</h1>
+        <form action="#" method="get">
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name only!" required minlength="15">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pword">Password:</label>
+            <input type="password" id="pword" name="pword">
+
+            <label for="phonenum">Cell Phone Number:</label>
+            <input type="tel" id="phonenum" name="phonenum" minlength="10" maxlength="11">
+
+            <label for="todaydate">Today's Date:</label>
+            <input type="date" id="todaydate" name="todaydate">
+<p></p>
+
+<fieldset>
+<legend>Preferred Contact Method</legend>
+<label for="contact-email">Email</label>
+ <input type="radio" id="contact-email" name="contact" value="email">
+
+
+<label for="contact-phone">Phone</label>
+ <input type="radio" id="contact-phone" name="contact" value="phone" checked>
+ <label for="contact-phone">Phone</label>
+
+ <label for="contact-text">Text</label>
+ <input type="radio" id="contact-text" name="contact" value="text">
+ 
+
+</fieldset>
+
+
+
+<fieldset>
+<legend>Topics of Interest</legend>
+
+<input type="checkbox" id="cb-html" name="html" value="html" checked>
+<label for="cb-html">HTML</label>
+
+<input type="checkbox" id="cb-css" name="css" value="css">
+<label for="cb-css">CSS</label>
+
+<input type="checkbox" id="cb-js" name="js" value="js">
+<label for="cb-js">JavaScript</label>
+
+</fieldset>
+
+
+<label for="state">Select your state:</label>
+<select id="state" name="state">
+<option value="">Select Your State:</option>
+
+<optgroup label="Midwest">
+<option value="WI">Wisconsin</option>
+<option value="IL">Illinois</option>
+<option value="MN">Minnesota</option>
+</optgroup>
+
+<optgroup label="South">
+<option value="TX">Texas</option>
+<option value="FL">Florida</option>
+</optgroup>
+</select>
+
+<p>
+</p>
+
+
+<label for="message">Tell us how we did:</label>
+<textarea id="message" name="message" rows="15" placeholder=""what happened?
+>What you did well was....
+
+</textarea>
+
+<p></p>
+<input type="submit" value="Submit this form">
+
+<button type="submit">Submit this form</button>
+
+<button type="reset">Clear Form</button>
+
+
+        </form>
+    </main>
+</body>
+
+</html>
